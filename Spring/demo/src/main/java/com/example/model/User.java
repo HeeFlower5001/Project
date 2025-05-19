@@ -3,10 +3,17 @@ package com.example.model;
 import java.time.LocalDate;
 
 public class User {
-    private Long id;
+    private long id;
     private String password;
     private String nickname;
     private LocalDate birthDate;
+
+    User(long id, String password, String nickname, LocalDate birthDate) {
+        this.id = id;
+        this.password = password;
+        this.nickname = nickname;
+        this.birthDate = birthDate;
+    }
 
     public Long getId() {
         return this.id;
