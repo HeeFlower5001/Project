@@ -1,16 +1,16 @@
 package com.example.model;
 
-import java.util.Time;
+import java.time.LocalTime;
 
 public class LookbackAlarmSetting {
     private long id;
     private boolean canAlarm = true;
-    private Time alarmTime;
-    private int alarmValue;
-    private AlarmUnit alarmUnit;
+    private LocalTime alarmTime;
+    private int lookbackValue;
+    private LookbackUnit lookbackUnit;
 }
 
-enum AlarmUnit {
+enum LookbackUnit {
     DAY,
     WEEK,
     MONTH
