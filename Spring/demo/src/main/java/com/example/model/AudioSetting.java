@@ -5,10 +5,9 @@ import jakarta.persistence.Id;
 
 @Entity
 public class AudioSetting {
-    private @Id
-    Long id;
+    @Id
+    private Long id;
 
-    
     private VoiceType voiceType;
     private double voiceSpeed;
     private Bgm bgm;
