@@ -1,4 +1,4 @@
-package com.example.model;
+package com.example.model.setting.alarm;
 
 import java.time.LocalTime;
 

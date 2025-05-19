@@ -1,4 +1,4 @@
-package com.example.model;
+package com.example.model.setting;
 
 public class DefaultSetting {
     private long id;
