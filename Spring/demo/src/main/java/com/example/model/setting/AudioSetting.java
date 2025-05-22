@@ -60,6 +60,3 @@ public class AudioSetting {
         this.bgm = bgm;
     }
 }
-
-
-

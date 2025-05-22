@@ -16,7 +16,7 @@ public class Inquiry {
     private Long inquiryId;
 
     // 외래키 어노테이션은 어떻게 설정할까?
-    @Column(nullable = false)
+    @Column(name = "user_id", nullable = false)
     private Long userId;
 
     // 최소 몇글자 이상 들어갈 수 있을까?
