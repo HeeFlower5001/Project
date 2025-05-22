@@ -27,6 +27,8 @@ public class User {
     @Column(name = "birthdate", nullable = false)
     private LocalDate birthDate;
 
+    // User가 자신의 문의 글을 보고 싶을땐 List를 추가하고 매핑하기기
+
     public User() { }
 
     public User(String loginId, String password, String nickname, LocalDate birthDate) {
