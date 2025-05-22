@@ -14,7 +14,7 @@ import jakarta.persistence.Id;
 public class LookbackAlarmSetting {
     @Id
     @Column(name = "user_id", nullable = false)
-    private long userId;
+    private Long userId;
 
     @Column(name = "can_alarm", nullable = false)
     private boolean canAlarm = true;
@@ -31,15 +31,15 @@ public class LookbackAlarmSetting {
 
     public LookbackAlarmSetting() {}
 
-    public LookbackAlarmSetting(long userId) {
+    public LookbackAlarmSetting(Long userId) {
         this.userId = userId;
     }
 
-    public long getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(long userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 

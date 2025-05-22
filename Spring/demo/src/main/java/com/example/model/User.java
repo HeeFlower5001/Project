@@ -13,7 +13,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id")
-    private long userId;
+    private Long userId;
 
     @Column(name = "login_id", nullable = false)
     private String loginId;
@@ -36,7 +36,7 @@ public class User {
         this.birthDate = birthDate;
     }
 
-    public long getUserId() {
+    public Long getUserId() {
         return this.userId;
     }
 

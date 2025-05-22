@@ -13,7 +13,7 @@ import jakarta.persistence.Id;
 public class AudioSetting {
     @Id
     @Column(name = "user_id", nullable = false)
-    private long userId;
+    private Long userId;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "voice_type", nullable = false)
@@ -28,11 +28,11 @@ public class AudioSetting {
 
     public AudioSetting() { }
     
-    public long getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(long userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 

@@ -13,11 +13,11 @@ public class Inquiry {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "inquiry_id")
-    private long inquiryId;
+    private Long inquiryId;
 
     // 외래키 어노테이션은 어떻게 설정할까?
     @Column(nullable = false)
-    private long userId;
+    private Long userId;
 
     // 최소 몇글자 이상 들어갈 수 있을까?
     // 최대는 100글자
@@ -43,15 +43,15 @@ public class Inquiry {
         this.content = content;
     }
 
-    public long getInquiryId() {
+    public Long getInquiryId() {
         return inquiryId;
     }
 
-    public long getUserId() {
+    public Long getUserId() {
         return userId;
     }
 
-    public void setUserId(long userId) {
+    public void setUserId(Long userId) {
         this.userId = userId;
     }
 
